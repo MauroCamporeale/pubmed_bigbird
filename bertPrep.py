@@ -11,11 +11,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import BookscorpusTextFormatting
+from formatters import BookscorpusTextFormatting
 import Downloader
 import TextSharding
-import WikicorpusTextFormatting
-import PubMedTextFormatting
+from formatters import WikicorpusTextFormatting
+from formatters import PubMedTextFormatting
 
 import argparse
 import itertools
