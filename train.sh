@@ -15,5 +15,7 @@
 
 export BERT_PREP_WORKING_DIR="${BERT_PREP_WORKING_DIR}"
 
-python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --train_file sharded\pubmed\train\<nomefile>.txt --validation_file sharded\pubmed\test\<nomefile>.txt --per_device_train_batch_size 1 --max_seq_length 4096 --do_train --output_dir bigbird_trained_model
+python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --train_file <path to train file>.txt
+
+python3 ${BERT_PREP_WORKING_DIR}/run_mlm.py --train_file <path to train file>.txt --validation_file <path to validation file>.txt --per_device_train_batch_size 1 --max_seq_length 4096 --do_train --output_dir bigbird_trained_model
 

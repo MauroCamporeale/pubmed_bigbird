@@ -21,3 +21,6 @@ python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action text_formatting --dataset 
 
 # Shard the text files
 python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action sharding --dataset pubmed_baseline
+
+# additional formatting
+python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action merging --dataset pubmed_baseline

@@ -1,0 +1,7 @@
+numpy~=1.22.3
+six~=1.16.0
+tqdm~=4.63.1
+datasets~=2.0.0
+transformers~=4.17.0
+sentencepiece~=0.1.96
+pubmed_parser~=0.3.1
