@@ -16,16 +16,8 @@
 export BERT_PREP_WORKING_DIR="${BERT_PREP_WORKING_DIR}"
 
 # Download
-#python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action download --dataset pubmed_baseline
+python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action download --dataset pubmed_baseline
 
-#python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action download --dataset google_pretrained_weights  # Includes vocab
-
-# Properly format the text files
-python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action text_formatting --dataset pubmed_baseline
-
-
-# Shard the text files
-python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action sharding --dataset pubmed_baseline
 
 ### BERT BASE
 
