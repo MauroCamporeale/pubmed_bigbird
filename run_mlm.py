@@ -485,6 +485,8 @@ def main():
         trainer.log_metrics("eval", metrics)
         trainer.save_metrics("eval", metrics)
 
+        #ciao
+
 
     kwargs = {"finetuned_from": model_args.model_name_or_path, "tasks": "fill-mask"}
     if data_args.dataset_name is not None:
