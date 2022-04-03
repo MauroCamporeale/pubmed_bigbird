@@ -5,3 +5,4 @@ datasets~=2.0.0
 transformers~=4.17.0
 sentencepiece~=0.1.96
 pubmed_parser~=0.3.1
+wget~=3.2.0
