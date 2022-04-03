@@ -44,7 +44,7 @@ class PubMedDownloader:
     def download(self):
         print('subset:', self.subset)
         url = self.download_urls[self.subset]
-        self.download_files(url)
+        # self.download_files(url)
         self.extract_files()
 
 
