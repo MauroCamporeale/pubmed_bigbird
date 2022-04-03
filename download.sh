@@ -16,7 +16,7 @@
 export BERT_PREP_WORKING_DIR="${BERT_PREP_WORKING_DIR}"
 
 # Download
-python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action download --dataset pubmed_baseline
+python3 bertPrep.py --action download --dataset pubmed_baseline
 
 
 ### BERT BASE

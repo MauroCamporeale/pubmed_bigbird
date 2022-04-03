@@ -15,7 +15,7 @@
 
 export BERT_PREP_WORKING_DIR="${BERT_PREP_WORKING_DIR}"
 
-python3 ${BERT_PREP_WORKING_DIR}/create_tokenizer.py --train_file <path to train file>.txt
+python3 create_tokenizer.py --train_file <path to train file>.txt
 
-python3 ${BERT_PREP_WORKING_DIR}/run_mlm.py --model_type big_bird --model_name_or_path big_bird_tokenizer --tokenizer_name big_bird_tokenizer --train_file <path to train file>.txt --validation_file <path to validation file>.txt --per_device_train_batch_size 1 --max_seq_length 4096 --do_train --output_dir bigbird_trained_model
+python3 run_mlm.py --model_type big_bird --model_name_or_path big_bird_tokenizer --tokenizer_name big_bird_tokenizer --train_file <path to train file>.txt --validation_file <path to validation file>.txt --per_device_train_batch_size 1 --max_seq_length 4096 --do_train --output_dir bigbird_trained_model
 

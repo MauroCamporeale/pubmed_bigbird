@@ -16,11 +16,11 @@
 export BERT_PREP_WORKING_DIR="${BERT_PREP_WORKING_DIR}"
 
 # Properly format the text files
-python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action text_formatting --dataset pubmed_baseline
+python3 bertPrep.py --action text_formatting --dataset pubmed_baseline
 
 
 # Shard the text files
-python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action sharding --dataset pubmed_baseline
+python3 bertPrep.py --action sharding --dataset pubmed_baseline
 
 # additional formatting
-python3 ${BERT_PREP_WORKING_DIR}/bertPrep.py --action merging --dataset pubmed_baseline
+python3 bertPrep.py --action merging --dataset pubmed_baseline
