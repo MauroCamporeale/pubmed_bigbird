@@ -27,7 +27,7 @@ import subprocess
 
 def main(args):
     # working_dir = os.environ['BERT_PREP_WORKING_DIR']
-    working_dir = 'E:\pubmed\DeepLearningExamples\TensorFlow\LanguageModeling\BERT\data'
+    working_dir = 'download'
 
     print('Working Directory:', working_dir)
     print('Action:', args.action)
