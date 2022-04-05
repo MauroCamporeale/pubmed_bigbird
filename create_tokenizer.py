@@ -3,14 +3,15 @@ import argparse
 import sentencepiece as spm
 from sentencepiece import SentencePieceTrainer
 from transformers import BigBirdTokenizer
+from transformers import BigBirdConfig
 
 def main(args):
 
-    spm.SentencePieceTrainer.train(
-        input=args.train_file,
-        model_prefix="big_bird_tokenizer",
-        vocab_size=50358,
-    )
+    # spm.SentencePieceTrainer.train(
+    #     input=args.train_file,
+    #     model_prefix="big_bird_tokenizer",
+    #     vocab_size=50358,
+    # )
 
     tokenizer = BigBirdTokenizer(
         "big_bird_tokenizer.model",
@@ -19,7 +20,7 @@ def main(args):
     tokenizer.save_pretrained('big_bird_tokenizer')
 
 
-    from transformers import BigBirdConfig
+
 
     config = BigBirdConfig(
         vocab_size=50358,  # we align this to the tokenizer vocab_size
