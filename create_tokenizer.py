@@ -7,11 +7,11 @@ from transformers import BigBirdConfig
 
 def main(args):
 
-    # spm.SentencePieceTrainer.train(
-    #     input=args.train_file,
-    #     model_prefix="big_bird_tokenizer",
-    #     vocab_size=50358,
-    # )
+    spm.SentencePieceTrainer.train(
+        input=args.train_file,
+        model_prefix="big_bird_tokenizer",
+        vocab_size=50358,
+    )
 
     tokenizer = BigBirdTokenizer(
         "big_bird_tokenizer.model",
